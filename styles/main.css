@@ -1,100 +1,124 @@
-/** BODY AND SECTION**/
+/*********************************** COLORS ****************************************/
+
+h1, h2, h3, h4, h5, h6 { margin: 0; }
+body { background-color: #69C4CC; }
+header { background-color: #CFEFEE; }
+nav#main { background-color: #F3CECD; }
+section { background-color: #FFFFFF; }
+
+/*********************************** FONTS ****************************************/
 body {
-	background-color: #69C4CC;
 	font-family: 'Oswald'; sans-serif;
-	
 	}
 
+/* Basic Global Styles */
 
-section {
-	background-color: #FFF;
-	margin:0 10em;
-	padding: 0 0;
-	}
-
-
-/** HEADER**/
-header { 
-	background-color: #CFEFEE;
-	padding-top: 1em;
-	}
-
-header ul {
-	float: right;
-	list-style-type: none;
-	padding-left: 10px;
-	}
-	
-header h1, h2, h3, h4, h5, h6 {
-		margin: 0;
-	}
-
-header ul li {
-	display: inline-block;
-	}
-
-h3 {
-	color: #69C4CC;
+nav ul  {
+  list-style-type: none;
 }
-	
-nav#main {
-	background-color: #F3CECD
-	}
-
-nav#main ul{
-	float: none;
-	padding: .5em;
-	margin: 0;
-	text-align: center;
-	}
-
-nav#main ul li{
-	padding: 0 2em 0 2em;
-	color: purple;
-	}
-
-/** CONTENT**/
-
-section#content {
-	height: 700px;
-	}
-
-section#content ul {
-	list-style: none;
-	}
-
-div#text h2 {
-	color: green;
-	}
-
-div#text p{
-	color: #69C4CC;
-	}
-
-
-
-div#pictures {
-	float: right;
-	max-width: 100%;
-	}
-
-
-
-/** FOOTER**/
+nav ul li {
+  display: inline-block;
+}
 
 footer ul {
-	float: none;
-	padding: .5em;
-	margin: 0;
-	text-align: left;
+	list-style-type: none;
 	}
 
-footer ul li{
-	list-style: none;
+footer li {
+	font-size: 12px;
+	}
+
+
+
+/***********************************  DESKTOP LAYOUT****************************************/
+
+header {
+  padding-top: 1em;
+  text-align: right;
+}
+header nav#authentication {
+  float: right;
+}
+header h1 {
+  float: left;
+}
+
+body > section, header > section, nav#authentication, footer {
+  margin: 0 5em;
+  clear: right;
+}
+
+nav#main {
+  text-align: center;
+}
+nav#main {
+  padding: 0.5em;
+}
+nav#main ul {
+  margin: 0;
+}
+
+body > section {
+  padding: 1em;
+}
+
+section {
+  clear: both;
+}
+
+.left_column, .right_column {
+  width: 50%;
+  float: left;
+}
+
+ul#children {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul#children *{
+  max-width: 100%;
+}
+
+ul#social {
+  list-style-type: none;
+  padding: 0;
+  clear: both;
+}
+
+ul#social li {
+  display: inline-block;
+  margin-right: 5%;
+}
+ul#social img {
+  max-width: 100%;
+}
+
+ul#social li:nth-child(4n) {
+  margin-right: 0;
+  clear: left;
+}
+
+footer li {
+	text-align: center;
 	float: left;
-	padding: 0 2em 0 2em;
+	margin-right: 2em;
+	
 	}
+footer {
+	display: inline-block;
+	}
+	
+/*************************************ADDITIONAL MODIFICATIONS FOR SMALL SCREEN LAYOUT ****************************************/
 
+@media screen and (max-width: 700px) {
+	body > section, header > section, nav#authentication, footer {
+				margin: 0 2em;
+	}
+	ul#children {
+			display: none;
+	}	
+}
 	
 
 

@@ -6,6 +6,8 @@
 	<link rel="stylesheet" type="text/normalize.css" href="styles/normalize.css">
 	<link rel="stylesheet" type="text/main.css" href="styles/main.css">
 	<link href='http://fonts.googleapis.com/css?family=Oswald:700|Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+   <meta charset="utf-8" />
 
 </head>
 
@@ -14,21 +16,21 @@
 <body>
 	<header>
 
-		<nav>
+		<nav id="authentication">
 				<ul>
 					<li><a href="#">sign in</a></li>
 					<li><a href="#">sign up</a></li>
 				</ul>
 		</nav>
 
-	<section id="top">
+		<section>
 		<h1>Savings Multiplied</h1>
 		<nav>
 			<ul>
-				<li>About</li>
-				<li>Contact</li>
-				<li>Blog</li>
-				<li>Press</li>
+				<li><a href='#'> About</a></li>
+				<li><a href='#'> Contact</a></li>
+				<li><a href='#'> Blog</a></li>
+				<li><a href='#'> Press</a></li>
 			</ul>
 	</nav>
 	
@@ -52,34 +54,29 @@
 	</nav>								
 </header>
 
-<section id="content">
-	<div id="text">
+<section>
+	<div class="left_column">
 		<h2>We're making one aspect of life easier for parents of multiples</h2>
 		<p>Buying and selling gently used sets of clothes</p>
 		<a href="#">Shop Now!</a>
 	</div>
 	
-   <div id="pictures">
-	<ul>
+
+	<ul id="children", class="right_column">
 		<li><img src="img/twins.jpg" alt=""></li>
 		<li><img src="img/triplets.jpg" alt=""></li>
 		<li><img src="img/quads.jpg" alt=""></li>
 	</ul>
-	</div>
 	
-	<div="bottom">
-	<ul>
-		<li><a href= "https://www.facebook.com/savingsmultiplied>Facebook</a></li>
-		<li><a href= "https://twitter.com/SavingsMultipld">Twitter</a></li>
-		<li><a href= "#">Message Boards</a></li>
-		<li><a href="#">Special Offers</a></li>
-	</ul>
-	</div>
-		
+	<ul id="social">
+		<li><a href="www.facebook.com"><img src= "img/facebook_callout.png" alt="Like us on Facebook"></li>
+		<li><a href="www.facebook.com"><img src= "img/twitter_callout.png" alt="Follow us on Twitter"></li>
+		<li><a href="www.facebook.com"><img src= "img/message_board_callout.png" alt="Message Boards"></li>
+		<li><a href="www.facebook.com"><img src="img/special_offers_callout.png" alt="Special Offers>"></li>
+	</ul>		
 </section>
 
 <footer>
-	<hr>
 	<ul>
 		<li><a href="#"> Link Here</a></li>
 		<li><a href="#"> Link Here</a></li>
@@ -88,5 +85,7 @@
 		<li><a href="#"> Link Here</a></li>
 		<li><a href="#"> Link Here</a></li>
 </ul>
-
 </footer>
+
+</body>
+</html>

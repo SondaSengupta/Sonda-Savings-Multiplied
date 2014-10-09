@@ -5,8 +5,14 @@ body { background-color: #69C4CC; }
 header { background-color: #CFEFEE; }
 nav#main { background-color: #F3CECD; }
 section { background-color: #FFFFFF; }
+/*About Button: 75CBD1
+/*Contact Button: 8CB72C
+Blog button: 702C8E
+Press Button: EB008C
+Shop Now: EB008C*/
 
-/*********************************** FONTS ****************************************/
+
+/***************** FONTS ***************************/
 body {
 	font-family: 'Oswald'; sans-serif;
 	}
@@ -30,7 +36,7 @@ footer li {
 
 
 
-/***********************************  DESKTOP LAYOUT****************************************/
+/*************  DESKTOP LAYOUT**************/
 
 header {
   padding-top: 1em;
@@ -109,7 +115,7 @@ footer {
 	display: inline-block;
 	}
 	
-/*************************************ADDITIONAL MODIFICATIONS FOR SMALL SCREEN LAYOUT ****************************************/
+/************ADDITIONAL MODIFICATIONS FOR SMALL SCREEN LAYOUT ****************************************/
 
 @media screen and (max-width: 700px) {
 	body > section, header > section, nav#authentication, footer {
@@ -120,7 +126,7 @@ footer {
 	}	
 }
 
-/*************************************LOGIN BOX****************************************/
+/*****************LOGIN BOX**********************/
 
 div.login-modal {
 	display: none;  /*makes the login menu not appear when you first go the page*/

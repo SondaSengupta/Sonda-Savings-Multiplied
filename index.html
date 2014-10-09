@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!----------HEAD AND PAGE INFO-------------------------------->
+<!----------HEAD AND PAGE INFO--------------------------->
 <html>
 <head>
 	<title> Sonda's SavingsMultiplied</title>
@@ -16,12 +16,12 @@
 
 <body>
 
-<!---------------HEADER AND NAVIGATION BARS---------------->
+<!-------------HEADER AND NAVIGATION BARS---------------->
 	<header>
 
 		<nav id="authentication">
 				<ul>
-					<li><a href="#" onclick=show(loginModal)>sign in</a></li>
+					<li id="signin"><a href="#">sign in</a></li>
 					<li><a href="#">sign up</a></li>
 				</ul>
 		</nav>
@@ -56,8 +56,7 @@
 		</ul>
 	</nav>								
 </header>
-
-<!-------------------------CONTENT-------------------------------------->
+<!-------------------------CONTENT-------->
 <section>
 	<div class="left_column">
 		<h2>We're making one aspect of life easier for parents of multiples</h2>
@@ -71,16 +70,16 @@
 		<li><img src="img/triplets.jpg" alt=""></li>
 		<li><img src="img/quads.jpg" alt=""></li>
 	</ul>
-'<!-------------------------SOCIAL MEDIA LINKS----------------->	
+<!-------------------------SOCIAL MEDIA LINKS----------------->	
 	<ul id="social">
-		<li><a href="www.facebook.com" ><img src= "img/facebook_callout.png" alt="Like us on Facebook"></li>
-		<li><a href="www.facebook.com"><img src= "img/twitter_callout.png" alt="Follow us on Twitter"></li>
-		<li><a href="www.facebook.com"><img src= "img/message_board_callout.png" alt="Message Boards"></li>
-		<li><a href="www.facebook.com"><img src="img/special_offers_callout.png" alt="Special Offers>"></li>
+		<li><a href="www.facebook.com" ><img src= "img/facebook_callout.png" alt="Like us on Facebook"></a></li>
+		<li><a href="www.facebook.com"><img src= "img/twitter_callout.png" alt="Follow us on Twitter"></a></li>
+		<li><a href="www.facebook.com"><img src= "img/message_board_callout.png" alt="Message Boards"></a></li>
+		<li><a href="www.facebook.com"><img src="img/special_offers_callout.png" alt="Special Offers>"></a></li>
 	</ul>		
 </section>
 
-<!-------------------------FOOTER--------------------------->
+<!-------------------------FOOTER------------------------->
 <footer>
 	<ul>
 		<li><a href="#"> Link Here</a></li>
@@ -100,7 +99,7 @@
 		<label>Username</label><input type="text" placeholder="username">
 		<label>Password</label><input type="password" placeholder="password">
 		<input type="submit" value="login">
-		<input type="button" value="cancel" onclick=hide(loginModal)>
+		<input type="button" value="cancel" class="cancel">
 	</form>
 	</div>
 </div>
@@ -117,10 +116,21 @@
 	
 	var loginModal = document.querySelector('.login-modal');
 	var lightbox = document.querySelector('.lightbox');
+	var cancel = document.querySelector('.cancel');
+	var signin = document.querySelector('#signin');
 	
 	lightbox.addEventListener('click', function(){
 		hide(loginModal);
 		});
+	
+	cancel.addEventListener('click', function() {
+		hide(loginModal);
+		});
+		
+	signin.addEventListener('click', function() {
+		show(loginModal);
+		});
+	
 	
 </script>
 

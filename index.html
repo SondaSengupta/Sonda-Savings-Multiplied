@@ -27,7 +27,7 @@
 		</nav>
 
 		<section>
-		<h1>Savings Multiplied</h1>
+		<img src=img/savings-multiplied-logo.png alt="Savings Multiplied" id="logo">
 		<nav>
 			<ul class="TopButtons">
 				<li><a href='#' id="AboutButton"> About</a></li>
@@ -92,7 +92,7 @@
 </footer>
 
 <!-------------------------LOGIN INFO--------------------->
-<div class="login-modal">
+<div class="login-modal hidden">
 	<div class ="lightbox"></div>
 	<div class="login-form">
 	<form>
@@ -105,33 +105,6 @@
 </div>
 </body>
 
-<script>
-	function hide(element) {
-		element.style.display = "none";
-		}
-		
-	function show(element) {
-		element.style.display = "block";
-		}
-	
-	var loginModal = document.querySelector('.login-modal');
-	var lightbox = document.querySelector('.lightbox');
-	var cancel = document.querySelector('.cancel');
-	var signin = document.querySelector('#signin');
-	
-	lightbox.addEventListener('click', function(){
-		hide(loginModal);
-		});
-	
-	cancel.addEventListener('click', function() {
-		hide(loginModal);
-		});
-		
-	signin.addEventListener('click', function() {
-		show(loginModal);
-		});
-	
-	
-</script>
+<script src="scripts/main.js"></script>
 
 </html>

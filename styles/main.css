@@ -38,9 +38,11 @@ footer li {
 
 /*************  DESKTOP LAYOUT**************/
 
+#logo {
+	float: left;
+	}
 header {
   padding-top: 1em;
-  text-align: right;
 }
 header nav#authentication {
   float: right;
@@ -48,6 +50,39 @@ header nav#authentication {
 header h1 {
   float: left;
 }
+
+#AboutButton{
+	border-radius:28px;
+	padding: 8px 31px;
+	background: #75CBD1;
+	color: white;
+	text-decoration: none;
+	}
+
+#ContactButton{
+	border-radius:28px;
+	padding: 8px 31px;
+	background: #8CB72C;
+	color: white;
+	text-decoration: none;
+	}
+
+
+#BlogButton{
+	border-radius:28px;
+	padding: 8px 31px;
+	background: #702C8E;
+	color: white;
+	text-decoration: none;
+	}
+
+#PressButton{
+	border-radius:28px;
+	padding: 8px 31px;
+	background: #EB008C;
+	color: white;
+	text-decoration: none;
+	}
 
 body > section, header > section, nav#authentication, footer {
   margin: 0 5em;
@@ -128,9 +163,12 @@ footer {
 
 /*****************LOGIN BOX**********************/
 
-div.login-modal {
-	display: none;  /*makes the login menu not appear when you first go the page*/
+/*div.login-modal { 
+	display: none;  
 	}
+	makes the login menu not appear when you first go the page, 
+	but not needed since property is mimicked in JS using .hidden regex
+*/
 
 .lightbox {
 	background: black;
@@ -154,11 +192,6 @@ div.login-form {
 
 	}
 
-
-
-
-
-
-
-
-	
+.hidden {
+display: none;
+}

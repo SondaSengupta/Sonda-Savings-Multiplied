@@ -1,1 +1,18 @@
 Project Log for Savings Multiplied: 
+
+Homepage:
+X -Add buttons to About, Contacts, Blog, and Press 
+-Add logo to Savings Multiplied via CSS
+-Add color and placement to second header
+-Add font, color, and placement to navigation bar links
+-Add color to "We're Making..." content
+-Add blue owl
+-Add color to "buying and selling"
+-Add button to Shop Now
+-Add Tree img on right side
+-Add Pipes using <span> tag
+-Make Footer text white
+-Make Signin/Signout text same as background color.
+-Recreate the search bar so it's rounded.
+-Round edges of the white section
+
